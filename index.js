@@ -1,9 +1,9 @@
-//Parallax 
+//Parallax
 function simpleParallax() {
     //This variable is storing the distance scrolled
     var scrolled = $(window).scrollTop() + 1;
 
-    //Every element with the class "scroll" will have parallax background 
+    //Every element with the class "scroll" will have parallax background
     //Change the "0.3" for adjusting scroll speed.
     $('.banner_image').css('background-position', '0' + -(scrolled * 0.3) + 'px');
 }
@@ -15,9 +15,11 @@ $(document).ready(function(){
 	var height = $(window).height();
 	$(".banner_image").css("height",Number(height)+'px');
 	$(".navbar_section").css("top",Number(height)-120+'px');
+
+
 });
 
-$( document ).ready(function() {
+$(document).delegate(function() {
     $('.video_section').hover(
         function(){
             $(this).find('.caption').fadeIn(250);
@@ -26,5 +28,5 @@ $( document ).ready(function() {
         function(){
             $(this).find('.caption').fadeOut(250); //.fadeOut(205)
         }
-    ); 
+    );
 });

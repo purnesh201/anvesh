@@ -43,7 +43,7 @@
         <div class="collapse navbar-collapse" id="navbar-brand-centered">
           <ul class="nav navbar-nav navPos">
             <li><a href="#" class=""><h7>Home</h7><p>back to top</p></a></li>
-            <li><a href="#" class=""><h7>About us</h7><p>Some thing about us</p></a></li>
+            <li><a href="#aboutUsDiv" class=""><h7>About us</h7><p>Some thing about us</p></a></li>
             <li><a href="#" class="videoLibrary"><h7>Wedding video portfolio</h7><p>my select work</p></a></li>
             <li><a href="#" class=""><h7>Blog</h7><p>news from journal</p></a></li>
             <li><a href="#" class=""><h7>Contact us</h7><p>stay in touch</p></a></li>
@@ -191,7 +191,42 @@
       </div>
       <!--end of fourth section-->
     </div>
-
+<!-- Start of About Us Section -->
+<div class="container" id="aboutUsDiv">
+ <div class="col-md-12 col-sm-12 col-xs-12">
+   <div class="about_us">
+     <div class="boutus_section">
+      <div class="row text-center">
+        <h4>We Are  Italian Wedding Video Graphers Based out of Hyderabad City</h4>
+        <p>
+          Anvesh and Vijay like a wedding videographers feel so lucky to live and work in an amazing place like this.
+        <p>for a very personal moment!</p>
+      </div>
+      <div class="row">
+        <div  class="col-sm-6">
+          <img src="images/anvesh.jpg" class="col-sm-2" style="width:400px;border:10px;" />
+        </div>
+        <div  class="col-sm-6">
+          <img src="images/vijay.jpg" class="col-sm-2" style="width:400px;border:10px;"/>
+        </div>
+     </div>
+     <div class="row">
+       <div  class="col-sm-6">
+         <h3>Anvesh</h3><br>
+         <h4>Passionate film maker</h4><br>
+         <h4>Phone: +91-9100413418</h4>
+       </div>
+       <div  class="col-sm-6">
+         <h3>Vijay</h3><br>
+         <h4>Professional events manager</h4><br>
+         <h4>Phone: +91-9100413418</h4>
+       </div>
+    </div>
+   </div>
+  </div>
+</div>
+</div>
+<!--End of About Us Section  -->
       <!--footer section-->
       <div class="footer_section text-center">
        <!--start of fifth section-->
@@ -301,7 +336,7 @@
      <div class="weddingvideo_section">
       <div class="row">
         {{#each videos}}
-       <div class="col-md-4 col-sm-4 col-xs-4">
+       <div class="col-md-4 col-sm-4 col-xs-4" onmouseover="bigImg()">
          <div class="video_section text-center">
            <div class="caption text-center">
             <img src="http://matteocastelluccia.it/wp-content/uploads/2015/04/festone.png"/ class="img-responsive">
@@ -322,4 +357,18 @@
 <!--end of conent-->
 
 </script>
+<script>
+function bigImg(){
+  $('.video_section').hover(
+      function(){
+          $(this).find('.caption').fadeIn(250);
+           $(this).find('.caption').css("padding-bottom","20px");//.fadeIn(250)
+      },
+      function(){
+          $(this).find('.caption').fadeOut(250); //.fadeOut(205)
+      }
+  );
+};
+</script>
+
 </html>
