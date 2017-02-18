@@ -1,8 +1,40 @@
+var  globalData = [ {
+      video: {
+          title: "Anvesh Nishitha firstlook",
+          url: "https://player.vimeo.com/video/177094203",
+          src: "images/alekyaRo.jpg"
+      },
+      description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu"
+
+  },{
+      video: {
+          title: "Alekhya Rohith",
+          url: "https://player.vimeo.com/video/169418192",
+          src: "images/alekyaRo.jpg"
+      },
+      description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
+
+  },{
+      video: {
+          title: "Fossil watch Co",
+          url: "https://player.vimeo.com/video/153806952",
+          src: "images/alekyaRo.jpg"
+      },
+      description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
+
+  },{
+      video: {
+          title: "O Balaaa... o bala...",
+          url: "https://player.vimeo.com/video/150530186",
+          src: "images/alekyaRo.jpg"
+      },
+      description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
+
+  }];
 
 
 
 
-//var productsHtml = freshProductsTemplate(productdata);
 
   // A $( document ).ready() block.
 $( document ).ready(function() {
@@ -11,14 +43,19 @@ $( document ).ready(function() {
     	alert("I fucked up");
     });
 
+    $('.video_section').hover(
 
- //    $('.instagram_block').click(function(){
- //    	alert("The paragraph was clicked.");
- //    	$.get('/src/js/views/weddingBlog.hbs', function(data) {
- //    	weddingBlogTemplate = Handlebars.compile(data);
- //  		});
- //    	$('.main_section').html(weddingBlogTemplate);
-	// });
+        function(){
+                debugger;
+            $(this).find('.caption').fadeIn(250);
+             $(this).find('.caption').css("padding-bottom","20px");//.fadeIn(250)
+        },
+        function(){
+            debugger;
+            $(this).find('.caption').fadeOut(250); //.fadeOut(205)
+        }
+    );
+
 
 });
 
@@ -28,34 +65,29 @@ $(document).delegate(".video_section", "click", function() {
     	var source = $("#some-template").html();
 var template = Handlebars.compile(source);
 
-var data = {
-    users: [ {
-        person: {
-            firstName: "Garry",
-            lastName: "Finch"
-        },
-        jobTitle: "Front End Technical Lead",
-        twitter: "gazraa"
-    }, {
-        person: {
-            firstName: "Garry",
-            lastName: "Finch"
-        },
-        jobTitle: "Photographer",
-        twitter: "photobasics"
-    }, {
-        person: {
-            firstName: "Garry",
-            lastName: "Finch"
-        },
-        jobTitle: "LEGO Geek",
-        twitter: "minifigures"
-    } ]
-};
+
+
+
+
 
 Handlebars.registerHelper('fullName', function(person) {
   return person.firstName + " " + person.lastName;
 });
 
-$('#replacble').html(template(data));
+$('#replacble').html(template(globalData));
+});
+
+
+
+$(document).delegate(".videoLibrary", "click", function() {
+  var source = $("#videoLibrary-template").html();
+  var template = Handlebars.compile(source);
+  $('#replacble').html(template({"videos":globalData}));
+});
+
+$(document).delegate(".video_section", "hover", function() {
+  debugger;
+      $(this).find('.caption').fadeIn(250);
+       $(this).find('.caption').css("padding-bottom","20px");//.fadeIn(250)
+
 });

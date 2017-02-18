@@ -41,12 +41,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
 
         <div class="collapse navbar-collapse" id="navbar-brand-centered">
-          <ul class="nav navbar-nav">
-            <li><a href="#"><h5>Home</h5><p>back to top</p></a></li>
-            <li><a href="#"><h5>About us</h5><p>Some thing about us</p></a></li>
-            <li><a href="#"><h5>Wedding video portfolio</h4><p>my select work</p></a></li>
-            <li><a href="#"><h5>Blog</h5><p>news from journal</p></a></li>
-            <li><a href="#"><h5>Contact us</h5><p>stay in touch</p></a></li>
+          <ul class="nav navbar-nav navPos">
+            <li><a href="#" class=""><h7>Home</h7><p>back to top</p></a></li>
+            <li><a href="#" class=""><h7>About us</h7><p>Some thing about us</p></a></li>
+            <li><a href="#" class="videoLibrary"><h7>Wedding video portfolio</h7><p>my select work</p></a></li>
+            <li><a href="#" class=""><h7>Blog</h7><p>news from journal</p></a></li>
+            <li><a href="#" class=""><h7>Contact us</h7><p>stay in touch</p></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -258,10 +258,10 @@
      <div class="row">
        <div class="row" id="">
          <ul class="nav navbar-nav" style="margin-left:115px;">
-           <li><a href="#"><h5>Home</h5><p>back to top</p></a></li>
-           <li><a href="#"><h5>About us</h5><p>Some thing about us</p></a></li>
-           <li><a href="#"><h5>Wedding video portfolio</h4><p>my select work</p></a></li>
-           <li><a href="#"><h5>Contact us</h5><p>stay in touch</p></a></li>
+           <li><a href="#"><h7>Home</h7><p>back to top</p></a></li>
+           <li><a href="#"><h7>About us</h7><p>Some thing about us</p></a></li>
+           <li><a href="#"><h7>Wedding video portfolio</h7><p>my select work</p></a></li>
+           <li><a href="#"><h7>Contact us</h7><p>stay in touch</p></a></li>
          </ul>
        </div>
        <div class="row blog_heading text-center">
@@ -291,5 +291,36 @@
   </div>
 </div>
 </div>
+</script>
+
+<script id="videoLibrary-template" type="text/x-handlebars-template">
+<!--start of content-->
+
+<div class="container">
+ <div class="col-md-12 col-sm-12 col-xs-12">
+   <div class="wedding_section">
+     <div class="weddingvideo_section">
+      <div class="row">
+        {{#each videos}}
+       <div class="col-md-4 col-sm-4 col-xs-4">
+         <div class="video_section text-center">
+           <div class="caption text-center">
+            <img src="http://matteocastelluccia.it/wp-content/uploads/2015/04/festone.png"/ class="img-responsive">
+            <h4>{{video.title}}</h4>
+            <h3>Alekhya & Rohith</h3>
+            <h6><i>text Eugene</i></h6>
+           </div>
+          <img src="{{video.src}}" class="img-responsive">
+        </div>
+      </div>
+      {{/each}}
+
+   </div>
+  </div>
+</div>
+</div>
+</div>
+<!--end of conent-->
+
 </script>
 </html>
