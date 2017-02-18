@@ -6,7 +6,7 @@ body, html {
 	position: relative;
 }
 .banner_image {
-    background:url(http://matteocastelluccia.it/wp-content/uploads/2015/12/wedding-videographer-1920x1200.jpg) no-repeat center center fixed;;
+    background:url("images/coverpage.jpg") no-repeat center center fixed;;
     text-align:center;
     font-family:'Open Sans' sans-serif;
     -webkit-background-size: cover;
@@ -22,7 +22,7 @@ body, html {
         text-align: center;
         background-color: transparent;
     }
-    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container .navbar-brand-centered,
     .navbar>.container-fluid .navbar-brand-centered {
         margin-left: -80px;
     }
@@ -48,7 +48,7 @@ ul.nav.navbar-nav h5 {
 }
 ul.nav.navbar-nav li :hover{
 	color: #fff;
-}	
+}
 ul.nav.navbar-nav li p{
     font-style: italic;
     font-stretch: condensed;
@@ -57,7 +57,7 @@ ul.nav.navbar-nav li p{
 	height: 100px;
 	width: 100px;
 	margin:20px auto;
-	
+
 }
 .section_two{
 	padding: 30px;
@@ -204,4 +204,3 @@ ul#menu li {
 	padding:50px;
 }
 /*****end of blog styles****/
-
