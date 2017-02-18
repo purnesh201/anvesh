@@ -62,12 +62,12 @@ $( document ).ready(function() {
     $('.video_section').hover(
 
         function(){
-                debugger;
+
             $(this).find('.caption').fadeIn(250);
              $(this).find('.caption').css("padding-bottom","20px");//.fadeIn(250)
         },
         function(){
-            debugger;
+
             $(this).find('.caption').fadeOut(250); //.fadeOut(205)
         }
     );
@@ -96,13 +96,14 @@ $('#replacble').html(template(globalData));
 
 
 $(document).delegate(".videoLibrary", "click", function() {
+  $('.about_us').hide();
   var source = $("#videoLibrary-template").html();
   var template = Handlebars.compile(source);
   $('#replacble').html(template({"videos":globalData}));
 });
 
 $(document).delegate(".video_section", "hover", function() {
-  debugger;
+
       $(this).find('.caption').fadeIn(250);
        $(this).find('.caption').css("padding-bottom","20px");//.fadeIn(250)
 
