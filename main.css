@@ -176,9 +176,11 @@ ul#menu li {
     font-style: italic;
 }
 .blog_content {
+
     margin: 15px 0px;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 23px;
+    /*margin-left: 175px;*/
 }
 .blog_notes.text-right ul {
     list-style-type: none;
@@ -194,7 +196,7 @@ ul#menu li {
     padding: 50px;
 }
 .marrigat_blog {
-    border-top: 1px solid #ddd;
+    /*border-top: 1px solid #ddd;*/
     margin-top: 10px;
 }
 .contactus_section img {

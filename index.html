@@ -10,12 +10,15 @@
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="handlebars-1.0.rc.2.js"></script>
+  <script src="weddingBlog.js"></script>
   <script src="index.js"></script>
 </head>
 <body>
 <div class="container-fluid">
 <div class="row">
   <div class="col-md-12">
+    <div id="replacble">
     <div class="row">
       <div class="main_section">
         <div class="banner_image">
@@ -187,7 +190,11 @@
          </div>
       </div>
       <!--end of fourth section-->
-      <!--start of fifth section-->
+    </div>
+
+      <!--footer section-->
+      <div class="footer_section text-center">
+       <!--start of fifth section-->
       <div class="fifth_section">
         <div class="instagram_block text-center">
         <div class="container">
@@ -198,7 +205,7 @@
             </div>
             <div class="row">
               <div class="col-md-2">
-               <div class="row">
+               <div class="row" id="js-firstImage">
                 <img src="https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/c236.0.607.607/16464033_291064961308866_3585528914488852480_n.jpg?ig_cache_key=MTQ0NDMxNjAwNjcyMDg0NzMxNA%3D%3D.2.c">
                 </div>
               </div>
@@ -235,12 +242,54 @@
         </div>
       </div>
       <!--end of fifth section-->
-      <!--footer section-->
-      <div class="footer_section text-center">
          <p>Copyright © 2017 Matteo Castelluccia - Wedding Videography - P.Iva 01689850707</p>
       </div>
       <!--end of footer-->
   </div>
 </div>
+</div>
 </body>
+
+<script id="some-template" type="text/x-handlebars-template">
+  <div class="container">
+   <div class="col-md-12 col-sm-12 col-xs-12">
+  <div class="blog_section">
+    <div class="marrigat_blog">
+     <div class="row">
+       <div class="row" id="">
+         <ul class="nav navbar-nav" style="margin-left:115px;">
+           <li><a href="#"><h5>Home</h5><p>back to top</p></a></li>
+           <li><a href="#"><h5>About us</h5><p>Some thing about us</p></a></li>
+           <li><a href="#"><h5>Wedding video portfolio</h4><p>my select work</p></a></li>
+           <li><a href="#"><h5>Contact us</h5><p>stay in touch</p></a></li>
+         </ul>
+       </div>
+       <div class="row blog_heading text-center">
+         <h3>Villa Balbianello wedding videography, Lake Como</h3>
+         <h6><i>Lenno</i></h6>
+       </div>
+       <div class="row">
+        <div class="blog-image text-center">
+          <iframe src="https://player.vimeo.com/video/187351797" width="720" height="480" frameborder="10" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+       </div>
+       <div class="row " style="width:720px; margin-left:170px;">
+
+         <div class="blog_content">
+          <p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+         </div>
+
+       </div>
+     </div>
+    </div>
+  </div>
+</div>
+</div>
+</script>
 </html>
