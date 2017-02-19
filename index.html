@@ -42,11 +42,11 @@
 
         <div class="collapse navbar-collapse" id="navbar-brand-centered">
           <ul class="nav navbar-nav navPos">
-            <li><a href="#" class=""><h7>Home</h7><p>back to top</p></a></li>
-            <li><a href="#aboutUsDiv" class=""><h7>About us</h7><p>Some thing about us</p></a></li>
-            <li><a href="#" class="videoLibrary"><h7>Wedding video portfolio</h7><p>my select work</p></a></li>
-            <li><a href="#" class=""><h7>Blog</h7><p>news from journal</p></a></li>
-            <li><a href="#" class=""><h7>Contact us</h7><p>stay in touch</p></a></li>
+            <li><a href="#" class=""><h7>Home</h7></a></li>
+            <li><a href="#aboutUsDiv" class=""><h7>About us</h7></a></li>
+            <li><a href="#" class="videoLibrary"><h7>Wedding video portfolio</h7></a></li>
+            <li><a href="#" class=""><h7>Blog</h7></a></li>
+            <li><a href="#" class=""><h7>Contact us</h7></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -69,7 +69,7 @@
           <div class="row">
             <div class="col-md-offset-5 col-md-2">
               <div class="section_two_image text-center">
-                <img src="http://matteocastelluccia.it/wp-content/uploads/2014/03/pino.png" class="img-responsive">
+                <img src="http://matteocastelluccia.it/wp-content/uploads/2014/03/pino.png"/ class="img-responsive">
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@
                     <h4>Castello di Vicarello</h4>
                     <h3>nenu & sailaja</h3>
                    </div>
-                  <img src="images/1.jpg" class="img-responsive">
+                  <img src="images/1.jpg" data-url="https://player.vimeo.com/video/202348357" data-title="Shreya & Akhil Akkineni" data-description="Babai, mee ayya nagarjuna..... mee thata nageshwarRao... abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu" class="img-responsive">
                 </div>
               </div>
               <div class="col-md-6">
@@ -111,7 +111,7 @@
                     <h4>Podere Rombolino</h4>
                     <h3>Kary & Brian</h3>
                    </div>
-                  <img src="images/2.jpg" alt="..." class="img-responsive">
+                  <img src="images/2.jpg" data-url="https://player.vimeo.com/video/204313015" data-title="KeshVee Wedding" data-description="Abbbo pichekkinchav.. nee jathi... abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu" alt="..." class="img-responsive">
                 </div>
               </div>
            </div>
@@ -123,7 +123,7 @@
                    <h4>Castello di Vicarello</h4>
                     <h3>raj & alekya</h3>
                    </div>
-                  <img src="images/3.jpeg" alt="..." class="img-responsive">
+                  <img src="images/3.jpeg" data-url="https://player.vimeo.com/video/193314462" data-title="The Wedding Finale : S & B<" data-description="abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu " alt="..." class="img-responsive">
                 </div>
               </div>
               <div class="col-md-6">
@@ -133,7 +133,7 @@
                     <h4>Castello di Vicarello</h4>
                     <h3>sachin & anjali</h3>
                    </div>
-                  <img src="images/4.jpg" alt="..." class="img-responsive">
+                  <img src="images/4.jpg" data-url="https://player.vimeo.com/video/177094203" data-title="Anvesh & Nishitha firstlook" data-description="abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu" alt="..." class="img-responsive">
                 </div>
               </div>
            </div>
@@ -300,23 +300,17 @@
          </ul>
        </div>
        <div class="row blog_heading text-center">
-         <h3>Villa Balbianello wedding videography, Lake Como</h3>
+         <h3>{{videoTitle}}</h3>
        </div>
        <div class="row">
         <div class="blog-image text-center">
-          <iframe src="https://player.vimeo.com/video/187351797" width="660" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="{{videoUrl}}" width="660" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
        </div>
        <div class="row " style="width:720px; margin-left:170px;">
 
          <div class="blog_content">
-          <p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <p> {{videoDescription}}</p>
          </div>
 
        </div>
@@ -329,7 +323,15 @@
 
 <script id="videoLibrary-template" type="text/x-handlebars-template">
 <!--start of content-->
-
+<div class="collapse navbar-collapse" id="navbar-brand-centered">
+  <ul class="nav navbar-nav navPos">
+    <li><a href="#" class=""><h7>Home</h7><p>back to top</p></a></li>
+    <li><a href="#aboutUsDiv" class=""><h7>About us</h7><p>Some thing about us</p></a></li>
+    <li><a href="#" class="videoLibrary"><h7>Wedding video portfolio</h7><p>my select work</p></a></li>
+    <li><a href="#" class=""><h7>Blog</h7><p>news from journal</p></a></li>
+    <li><a href="#" class=""><h7>Contact us</h7><p>stay in touch</p></a></li>
+  </ul>
+</div><!-- /.navbar-collapse -->
 <div class="container">
  <div class="col-md-12 col-sm-12 col-xs-12">
    <div class="wedding_section">
@@ -341,10 +343,9 @@
            <div class="caption text-center">
             <img src="http://matteocastelluccia.it/wp-content/uploads/2015/04/festone.png"/ class="img-responsive">
             <h4>{{video.title}}</h4>
-            <h3>Alekhya & Rohith</h3>
-            <h6><i>text Eugene</i></h6>
+            <h3>{{video.title}}</h3>
            </div>
-          <img src="{{video.src}}" class="img-responsive">
+          <img src="{{video.src}}" data-url="{{video.url}}" data-title="{{video.title}}" data-description="{{description}}" class="img-responsive">
         </div>
       </div>
       {{/each}}
@@ -359,7 +360,7 @@
 </script>
 <script>
 function bigImg(){
-  
+
   $('.video_section').hover(
       function(){
           $(this).find('.caption').fadeIn(250);

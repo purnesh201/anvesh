@@ -37,7 +37,7 @@ body, html {
     color: #93876f !important;;
 }
 .navPos{
-  margin-left: 50px;
+  margin-left: 150px;
 }
 .navbar-default .navbar-nav>li>a {
     color: #382712 !important;;
@@ -46,7 +46,7 @@ ul.nav.navbar-nav li {
     padding: 2px 33px;
 }
 ul.nav.navbar-nav h5 {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 600;
 }
 ul.nav.navbar-nav li :hover{

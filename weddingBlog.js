@@ -78,19 +78,15 @@ $( document ).ready(function() {
 
 $(document).delegate(".video_section", "click", function() {
     	alert("The paragraph was clicked.");
+      var videoObj = {};
+      console.log($($(this).find('img')[1]).data('url'));
+      var videoUrl = $($(this).find('img')[1]).data('url');
+      var videoDescription = $($(this).find('img')[1]).data('description');
+      var videoTitle = $($(this).find('img')[1]).data('title');
     	var source = $("#some-template").html();
-var template = Handlebars.compile(source);
-
-
-
-
-
-
-Handlebars.registerHelper('fullName', function(person) {
-  return person.firstName + " " + person.lastName;
-});
-
-$('#replacble').html(template(globalData));
+      var template = Handlebars.compile(source);
+      $('#replacble').html(template({"videoUrl" : videoUrl ,"videoTitle" : videoTitle,
+       "videoDescription":videoDescription}));
 });
 
 
