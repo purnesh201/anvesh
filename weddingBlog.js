@@ -1,48 +1,48 @@
 var  globalData = [ {
       video: {
-          title: "Anvesh Nishitha firstlook",
+          title: "Anvesh Nishitha coupleSoot",
           url: "https://player.vimeo.com/video/177094203",
-          src: "images/alekyaRo.jpg"
+          src: "images/AnveshNishitha.JPG"
       },
       description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu"
 
   },{
       video: {
+          title: "Keshav Veena",
+          url: "https://player.vimeo.com/video/204313015",
+          src: "images/KeshavVeena.JPG"
+      },
+      description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
+
+  },{
+      video: {
+          title: "Akkineni vari pelli sandadi",
+          url: "https://player.vimeo.com/video/202348357",
+          src: "images/ShriyaAkhil.JPG"
+      },
+      description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
+
+  },{
+      video:  {
+          title: "Bhargavi Siddu's Moment ",
+          url: "https://player.vimeo.com/video/193314462",
+          src: "images/BhargaviSiddu.JPG"
+      },
+      description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
+
+  },{
+      video: {
+          title: "Yamini pelli",
+          url: "https://player.vimeo.com/video/193886302",
+          src: "images/sds.JPG"
+      },
+      description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
+
+  },{
+      video: {
           title: "Alekhya Rohith",
-          url: "https://player.vimeo.com/video/169418192",
-          src: "images/alekyaRo.jpg"
-      },
-      description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
-
-  },{
-      video: {
-          title: "Fossil watch Co",
-          url: "https://player.vimeo.com/video/153806952",
-          src: "images/alekyaRo.jpg"
-      },
-      description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
-
-  },{
-      video: {
-          title: "O Balaaa... o bala...",
-          url: "https://player.vimeo.com/video/150530186",
-          src: "images/alekyaRo.jpg"
-      },
-      description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
-
-  },{
-      video: {
-          title: "O Balaaa... o bala...",
-          url: "https://player.vimeo.com/video/150530186",
-          src: "images/alekyaRo.jpg"
-      },
-      description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
-
-  },{
-      video: {
-          title: "O Balaaa... o bala...",
-          url: "https://player.vimeo.com/video/150530186",
-          src: "images/alekyaRo.jpg"
+          url: "https://player.vimeo.com/video/177094203",
+          src: "images/AnveshNishitha.JPG"
       },
       description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
 

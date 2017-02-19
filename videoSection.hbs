@@ -1,0 +1,44 @@
+<script id="videoLibrary-template" type="text/x-handlebars-template">
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <!-- <div class="navbar-brand navbar-brand-centered">Brand</div> -->
+  </div>
+  <div class="collapse navbar-collapse" id="navbar-brand-centered">
+    <ul class="nav navbar-nav">
+      <li><a href="#"><h5>Home</h5><p>back to top</p></a></li>
+      <li><a href="#"><h5>About us</h5><p>Some thing about us</p></a></li>
+      <li><a href="#"><h5>Wedding video portfolio</h4><p>my select work</p></a></li>
+      <li><a href="#"><h5>Blog</h5><p>news from journal</p></a></li>
+      <li><a href="#"><h5>Contact us</h5><p>stay in touch</p></a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+ <div class="col-md-12 col-sm-12 col-xs-12">
+   <div class="wedding_section">
+     <div class="weddingvideo_section">
+      <div class="row">
+        {{#each videos}}
+       <div class="col-md-4 col-sm-4 col-xs-4" onmouseover="bigImg()">
+         <div class="video_section text-center">
+           <div class="caption text-center">
+            <img src="http://matteocastelluccia.it/wp-content/uploads/2015/04/festone.png"/ class="img-responsive">
+            <h4>{{video.title}}</h4>
+            <h3>Alekhya & Rohith</h3>
+           </div>
+          <img src="{{video.src}}" class="img-responsive">
+        </div>
+      </div>
+      {{/each}}
+
+   </div>
+  </div>
+</div>
+</div>
+</div>
+<!--end of conent-->
+</script>

@@ -1,6 +1,17 @@
+@font-face {
+    font-family: 'traveling__typewriterregular';
+    src: url('travelingtypewriter-webfont.woff2') format('woff2'),
+         url('travelingtypewriter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.container-fluid {
+background-color: rgba(218, 165, 32, 0.44);
+}
 body, html {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Courier New", Courier, monospace;
 }
 .main_sectio{
 	position: relative;
@@ -8,7 +19,7 @@ body, html {
 .banner_image {
     background:url("images/coverpage.jpg") no-repeat center center fixed;;
     text-align:center;
-    font-family:'Open Sans' sans-serif;
+    font-family:"Courier New", Courier, monospace;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -142,7 +153,7 @@ ul.nav.navbar-nav li p{
 }
 h3, h3.post-title {
     font-size: 22px;
-    font-family: Times, Georgia, serif;
+    font-family: "Courier New", Courier, monospace;
     font-weight: bold;
     font-style: inherit;
 }
