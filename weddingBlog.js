@@ -104,3 +104,35 @@ $(document).delegate(".video_section", "hover", function() {
        $(this).find('.caption').css("padding-bottom","20px");//.fadeIn(250)
 
 });
+
+
+function aboutUs(){
+  var source = $("#aboutUs-template").html();
+  var template = Handlebars.compile(source);
+  $('#replacble').html(template());
+}
+
+
+function contactUs(){
+  var source = $("#contactUs-template").html();
+  var template = Handlebars.compile(source);
+  $('#replacble').html(template());
+  $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyBppZqaJ-RcF5IuXM-3GpzMUYysJwyv3PY&callback=initMap");
+  //initMap();
+}
+
+    function initMap() {
+        var uluru = {
+            lat: 17.4238677,
+            lng: 78.4574937
+        };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: uluru
+        });
+
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
