@@ -56,7 +56,6 @@ var  globalData = [ {
 $( document ).ready(function() {
     console.log( "ready!" );
     $('#js-firstImage').click(function(){
-    	alert("I fucked up");
     });
 
     $('.video_section').hover(
@@ -77,7 +76,6 @@ $( document ).ready(function() {
 
 
 $(document).delegate(".video_section", "click", function() {
-    	alert("The paragraph was clicked.");
       var videoObj = {};
       console.log($($(this).find('img')[1]).data('url'));
       var videoUrl = $($(this).find('img')[1]).data('url');
