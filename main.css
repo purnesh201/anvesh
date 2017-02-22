@@ -6,12 +6,13 @@
     font-style: normal;
 
 }
-/*.container-fluid {
-background-color: #fff;
-}*/
+.container-fluid {
+background-color: rgba(163, 130, 57, 0.73);
+}
 body, html {
     height: 100%;
     font-family: "Courier New", Courier, monospace;
+
 }
 .main_sectio{
 	position: relative;
@@ -19,7 +20,8 @@ body, html {
 .banner_image {
     background:url("images/coverpage.jpg") no-repeat center center fixed;;
     text-align:center;
-    font-family:"Courier New", Courier, monospace;
+    font-family: "TrajanPro-Regular", Georgia, serif;
+    text-transform: uppercase;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -147,9 +149,11 @@ ul.nav.navbar-nav li p{
     margin:5%;
     color: #000;
     text-align: center;
+    text-transform: uppercase;
+    font-family: "TrajanPro-Regular", Georgia, serif;
 }
 .caption.text-center img {
-    margin: 40px auto;
+    margin: 30px auto;
 }
 h3, h3.post-title {
     font-size: 22px;
