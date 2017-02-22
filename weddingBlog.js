@@ -1,4 +1,5 @@
 var  globalData = [ {
+      hashTag : "Anvesh&Nishita",
       video: {
           title: "Anvesh Nishitha coupleSoot",
           url: "https://player.vimeo.com/video/177094203",
@@ -7,6 +8,7 @@ var  globalData = [ {
       description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu"
 
   },{
+      hashTag : "Keshav&Veena",
       video: {
           title: "Keshav Veena",
           url: "https://player.vimeo.com/video/204313015",
@@ -15,6 +17,7 @@ var  globalData = [ {
       description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
 
   },{
+      hashTag : "Akhil&Shriya",
       video: {
           title: "Akkineni vari pelli sandadi",
           url: "https://player.vimeo.com/video/202348357",
@@ -23,6 +26,7 @@ var  globalData = [ {
       description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
 
   },{
+      hashTag : "Bhargavi&Siddu",
       video:  {
           title: "Bhargavi Siddu's Moment ",
           url: "https://player.vimeo.com/video/193314462",
@@ -31,6 +35,7 @@ var  globalData = [ {
       description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
 
   },{
+      hashTag : "yamini",
       video: {
           title: "Yamini pelli",
           url: "https://player.vimeo.com/video/193886302",
@@ -39,6 +44,7 @@ var  globalData = [ {
       description: "abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka anna nuv katti thopu thurumu abbo pichi keka"
 
   },{
+      hashTag : "Alekhya&Rohith",
       video: {
           title: "Alekhya Rohith",
           url: "https://player.vimeo.com/video/177094203",
@@ -71,6 +77,21 @@ $( document ).ready(function() {
         }
     );
 
+    var hash = window.location.hash;
+
+    var matchedArray = globalData.filter(function(b){return "#" + b.hashTag == hash})
+
+    if (matchedArray.length > 0){
+      var videoUrl = matchedArray[0].video.url;
+      var videoDescription = matchedArray[0].description;
+      var videoTitle = matchedArray[0].video.title;
+      var source = $("#some-template").html();
+      var template = Handlebars.compile(source);
+      $('#replacble').html(template({"videoUrl" : videoUrl ,"videoTitle" : videoTitle,
+       "videoDescription":videoDescription}));
+      var hashTag = hash;
+      //window.location.hash = "#" + hashTag;
+    }
 
 });
 
@@ -85,6 +106,8 @@ $(document).delegate(".video_section", "click", function() {
       var template = Handlebars.compile(source);
       $('#replacble').html(template({"videoUrl" : videoUrl ,"videoTitle" : videoTitle,
        "videoDescription":videoDescription}));
+      var hashTag = $($(this).find('img')[1]).data('hashtag');
+      window.location.hash = "#" + hashTag;
 });
 
 
